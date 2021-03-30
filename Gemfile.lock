@@ -27,12 +27,11 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  rack
   sinatra
   sinatra-contrib
 
 RUBY VERSION
-   ruby 2.6.4p104
+   ruby 2.7.0p0
 
 BUNDLED WITH
-   2.1.4
+   2.2.3

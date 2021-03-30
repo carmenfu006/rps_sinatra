@@ -1,18 +1,14 @@
-<h1>Click on one of them below to start the game</h1>
-<div id='items' class='d-flex justify-content-center'>
-  <h1 class='rock mx-5'>
-    <a href='/throw/rock'>
-      <button class='btn btn-secondary' type='button'>Rock</button>
-    </a>
-  </h1>
-  <h1 class='paper mx-5'>
-    <a href='/throw/paper'>
-      <button class='btn btn-secondary' type='button'>Paper</button>
-    </a>
-  </h1>
-  <h1 class='scissors mx-5'>
-    <a href='/throw/scissors'>
-      <button class='btn btn-secondary' type='button'>Scissors</button>
-    </a>
-  </h1>
-</div>
+<h1>Welcome to Rock Paper Scissors Game</h1>
+<h3 class='mt-5'>Please enter your name below.</h3>
+<form action='/game' method='post' class='mt-3'>
+  <label>
+    <div class='d-flex justify-content-center'>
+      <section class='form-group'>
+        <input type='text' name='player_name' placeholder='Enter your name' class='form-control rounded-0' autofocus />
+      </section>
+      <section class='form-group'>
+        <input type='submit' value='Enter' class='btn btn-primary rounded-0' />
+      </section>
+    </div>
+  </label>
+</form>
