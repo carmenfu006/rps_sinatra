@@ -35,9 +35,8 @@ class ApplicationController < Sinatra::Base
 
     if session['player_rounds'] >= 0
       session['results_ready'] = false
-      if session['player_rounds'] == 0
-        session['results_ready'] = true
-      end
+      session['results_ready'] = true if session['player_rounds'] == 0
+
       if params[:gamer_choices] == 'rock' && choices[computer_choices] == 'paper'
         store_results('lose')
         erb :lose
